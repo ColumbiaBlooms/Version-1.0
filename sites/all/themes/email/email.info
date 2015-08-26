@@ -1,0 +1,7 @@
+
+name = Email
+description = Theme for HTML emails.
+core = 7.x
+engine = phptemplate
+
+stylesheets[all][] = style.css
