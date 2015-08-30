@@ -1,0 +1,16 @@
+name = PM Ticket (Deprecated)
+description = "Allows creation of tickets for Projects and Tasks. Deprecated in favour of PM Issue module."
+dependencies[] = pm
+dependencies[] = pmorganization
+dependencies[] = pmproject
+dependencies[] = pmtask
+package = Project Management
+core = 7.x
+files[] = pmticket.test
+
+; Information added by Drupal.org packaging script on 2015-05-29
+version = "7.x-2.0+79-dev"
+core = "7.x"
+project = "pm"
+datestamp = "1432896495"
+

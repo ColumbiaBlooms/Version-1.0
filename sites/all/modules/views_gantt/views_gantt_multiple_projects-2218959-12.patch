@@ -1,0 +1,16 @@
+diff --git a/views_gantt.module b/views_gantt.module
+index 86c22e5..967d93d 100644
+--- a/views_gantt.module
++++ b/views_gantt.module
+@@ -66,11 +66,7 @@ function views_gantt_data_json() {
+   }
+ 
+   if (isset($_SESSION['views_gantt'])) {
+-    $project_id = $_SESSION['views_gantt']['project']['id'];
+     foreach ($_SESSION['views_gantt']['tasks'] as $id => $task) {
+-      if (!$task['parent_id'] && $id != $project_id) {
+-        $task['parent_id'] = $project_id;
+-      }
+       $row = array(
+         'id' => $id,
+         'text' => $task['name'],
